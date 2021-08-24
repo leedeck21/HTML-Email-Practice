@@ -78,8 +78,21 @@
         .two-columns.last {
             padding: 0 !important;
         }
+        a {
+            text-decoration: none;
+            color: #37cbbf;
+        }
 
-        @media screen and (max-width: 600px) {}
+        @media screen and (max-width: 600px) {
+            .two-columns .padding {
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+            }
+            .two-columns .content img {
+                width: 300px !important;
+                max-width: 300px !important;
+            }
+        }
     </style>
 </head>
 
@@ -156,7 +169,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="padding:10px;">
+                                                    <td style="padding:10px; text-align: center;">
                                                         <p>Build Responsive Emails</p>
                                                         <p style="padding-bottom:15px">Lorem ipsum dolor sit amet,
                                                             consectetur adipiscing elit. Integer blandit leo ut turpis
@@ -180,7 +193,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="padding:10px;">
+                                                    <td style="padding:10px; text-align: center;">
                                                         <p>Create Custom Designs</p>
                                                         <p style="padding-bottom:15px">Lorem ipsum dolor sit amet,
                                                             consectetur adipiscing elit. Integer blandit leo ut turpis
@@ -237,6 +250,9 @@
                                 <a href="#"><img src="/img/html-email-white.png" width="230" alt=""></a>
                                 <p style="padding-top: 18px;">w3newbie HTML Email</p>
                                 <p>123 Street Road, City, State 55555</p>
+                                <p><a href="mailto:email@example.com">email@example.com</a></p>
+                                <p><a href="tel:18008888888">1-800-888-8888</a></p>
+                                <p><a href="#" style="font-size: 13px;">UNSUBSCRIBE</a></p>
                             </td>
                         </tr>
 
